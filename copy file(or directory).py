@@ -10,7 +10,7 @@ def copy_file(scr_dir, dst_dir):
         dst_file = dst_dir + '/' + file_name
         if os.path.isdir(scr_file):  # 判断文件是文件还是文件夹, 如果是文件夹， 就创建这个文件夹
             os.mkdir(dst_file)
-            copy_file(scr_file, dst_file)   # 调用新的目录路径
+            copy_file(scr_file, dst_file)   # 调用函数 使用新的目录路径
         else:
             with open(scr_file, 'rb') as f:
                 with open(dst_file, 'wb') as d:
