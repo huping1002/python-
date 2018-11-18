@@ -25,6 +25,6 @@ if __name__ == '__main__':
     scr_dir = '/home/python/Desktop/text'  # 选择你要复制的文件或目录
     dst_dir = '/home/python/Desktop/haha'  # 复制后的存储位置
     if os.path.exists(dst_dir):
-        shutil.rmtree(dst_dir)   # 如果目录存在就删除目录
+        shutil.rmtree(dst_dir)   # 如果新目录存在就删除目录
     os.mkdir(dst_dir)
     copy_file(scr_dir, dst_dir)   # 调用copy_file函数
